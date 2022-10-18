@@ -8,27 +8,27 @@
 <EditForm Model="@user" OnValidSubmit="SaveUser">
     <DataAnnotationsValidator />
     <div class="mb-3">
-        <label for="Name" class="form-label">Namn</label>
+        <label for="Name" class="form-label ml-3">Namn</label>
         <div class="col-md-4">
             <InputText class="form-control" @bind-Value="user.Username" />
         </div>
         <ValidationMessage For="@(() => user.Username)" />
     </div>
     <div class="mb-3">
-        <label for="Address" class="form-label">Adress</label>
+        <label for="Address" class="form-label ml-3">Adress</label>
         <div class="col-md-4">
             <InputText class="form-control" @bind-Value="user.Address" />
         </div>
         <ValidationMessage For="@(() => user.Address)" />
     </div> 
     <div class="mb-3">
-        <label for="Emailid" class="form-label">E-post</label>
+        <label for="Emailid" class="form-label ml-3">E-post</label>
         <div class="col-md-4">
             <InputText class="form-control" @bind-Value="user.Emailid" />
         </div>
         <ValidationMessage For="@(() => user.Emailid)" />
     </div>
-    <div class="form-group">
+    <div class="form-group ml-3">
         <button type="submit" class="btn btn-primary">Spara</button>
         <button class="btn btn-warning" @onclick="Cancel">Avbryt</button>
     </div>

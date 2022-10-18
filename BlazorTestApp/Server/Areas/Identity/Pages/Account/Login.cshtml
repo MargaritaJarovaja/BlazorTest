@@ -5,8 +5,8 @@
     ViewData["Title"] = "Log in";
 }
 
-<div class="d-md-flex align-items-center justify-content-center bg-dark border-dark rounded-2">
-    <div class="col-md-6 py-md-4 my-10">
+<div class="d-flex align-items-center justify-content-center bg-dark mt-md-5 rounded-lg">
+    <div class="col-md-8 py-md-4 rounded-lg">
         <section>
             <form id="account" method="post">
                 <h4 class="text-white pt-lg-4">Logga in</h4>
@@ -41,7 +41,7 @@
                         <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Registrera dig som ny användare</a>
                     </p>
                     <p>
-                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Skicka en ny e-postbekräftelse</a>
                     </p>
                 </div>
             </form>

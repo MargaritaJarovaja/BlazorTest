@@ -10,8 +10,9 @@
         <button class="nav-link btn btn-primary mx-12" @onclick="BeginSignOut">Logga ut</button>
     </Authorized>
     <NotAuthorized>
-        <a href="authentication/register">Registrera</a>
-        <a href="authentication/login">Logga in</a>
+        @*<a href="authentication/register">Registrera</a>*@
+        <a class="btn-primary mr-lg-2 py-2 px-4 rounded text-decoration-none" href="authentication/login">Starta</a>
+        
     </NotAuthorized>
 </AuthorizeView>
 

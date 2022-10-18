@@ -5,16 +5,16 @@
 @inject HttpClient Http
 @attribute [Authorize]
 
-<h1 class="mt-12">Användarlista</h1>
+<h1 class="mt-md-5">Användarlista</h1>
 
 <div class="row">
     <div class="col-md-6">
-        <a href='/user/add' class="btn btn-primary" role="button">
+        <a href='/user/add' class="btn btn-primary mt-md-5" role="button">
             <i class="fas fa-user-plus"></i>
             Lägg till användare
         </a>
     </div>
-    <div class="input-group col">
+    <div class="input-group col mt-md-5">
         <input type="text" class="form-control" placeholder="Sök"
                @bind="SearchString" @bind:event="oninput" @onkeyup="FilterUser" />
         @if (SearchString.Length > 0)
@@ -35,7 +35,7 @@
 else
 {
     <table class="mt-5 table table-striped align-middle table-bordered">
-        <thead class="table-success">
+        <thead class="table-dark">
             <tr>
                 <th>ID</th>
                 <th>Namn</th>
