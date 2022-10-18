@@ -1,0 +1,39 @@
+﻿@inherits LayoutComponentBase
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+
+
+
+
+<AuthorizeView>
+    <Authorized>
+        <div class="page">
+            <div class="sidebar">
+                <NavMenu />
+            </div>
+            <div class="main">
+                <div class="top-row px-4 auth">
+                    <LoginDisplay />
+                    @*<a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>*@
+                </div>
+                <div class="content px-2">
+                    @Body
+                </div>
+            </div>
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <div class="page">         
+            <div class="main">
+                <div class="top-row px-4 auth">
+                    <LoginDisplay />
+                    @*<a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>*@
+                </div>
+                <div class="content px-4">
+                    @Body
+                </div>
+            </div>
+        </div>
+    </NotAuthorized>
+</AuthorizeView>
