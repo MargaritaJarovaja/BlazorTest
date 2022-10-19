@@ -1,0 +1,21 @@
+# BlazorTest
+------------
+The project is made on ASP.NET Core Blazor Webassembly and connected to databases on SQLServer. 
+
+One database receives, stores and processes information about users who have access to the application and can log in. 
+The second database receives, stores and processes information about users that have been created in the application. 
+
+In order to process user data from the first database in the application, roles for Identity must be configured in the application, 
+but this was not required in the task, so I made 2 databases without using roles.
+
+To connect the mail confirmation form and to change the password, I used SendGrid Twilio, where I created a project and received an ApiKey for it, 
+using which I connected the project to the server and received a confirmation to the mail specified during registration.
+
+ASP.NET Core Blazor Webassembly Identity I used to identify and authorize the user. 
+Identity has a set of forms and functions that you need to connect to the server and process according to the requirements of your project. 
+
+Also, to process the data and change the design, scaffolded files for the Login and Regestration forms were required.
+
+The project uses Bootstrap, with the help of which changes were made to the automatically generated design.
+
+The project is launched with a BlazorTestApp.sln file.
