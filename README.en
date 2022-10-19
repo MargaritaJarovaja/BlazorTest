@@ -1,5 +1,5 @@
-# BlazorTest
-------------
+# BlazorTest Project
+--------------------
 The project is made on ASP.NET Core Blazor Webassembly and connected to databases on SQLServer. 
 
 One database receives, stores and processes information about users who have access to the application and can log in. 
