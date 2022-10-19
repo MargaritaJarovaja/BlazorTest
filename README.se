@@ -1,0 +1,21 @@
+# BlazorTestApp projekt
+-----------------------
+Projektet är gjort på asp.net Core Blazor Webassembly och kopplat till databaser på SQL Server.
+
+En databas tar emot, lagrar och bearbetar information om användare som har tillgång till applikationen och kan logga in. 
+Den andra databasen tar emot, lagrar och bearbetar information om användare som har skapats i applikationen. 
+
+För att kunna bearbeta användardata från den första databasen i applikationen måste roller för Identity konfigureras i applikationen, 
+men detta krävdes inte i uppgiften, så jag gjorde 2 databaser utan att använda roller.
+
+För att koppla bekräftelseformuläret för e-post och för att ändra lösenordet använde jag SendGrid Twilio, 
+där jag skapade ett projekt och fick en ApiKey för det, med hjälp av vilken jag kopplade projektet till servern och 
+fick en bekräftelse på e-postmeddelandet som angavs under registreringen.
+
+ASP.NET Core Blazor Webassembly Identity Jag använde för att identifiera och auktorisera användaren. 
+Identity har en uppsättning formulär och funktioner som man behöver för att ansluta till servern och bearbeta enligt kraven i projektet. 
+För att bearbeta data och ändra designen krävdes byggnadsställningar för inloggningsformulären och registreringsformulären.
+
+Projektet använder bootstrap, med hjälp av vilket ändringar gjordes i den automatiskt genererade designen.
+
+Projektet startas med en BlazorTestApp.sln fil.
